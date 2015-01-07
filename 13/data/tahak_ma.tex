@@ -1,0 +1,274 @@
+\documentclass[8pt, a4paper]{extarticle}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage[hmargin=1cm,vmargin=2cm]{geometry}
+\usepackage[fleqn]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multicol}
+ 
+\newcommand{\arctg}{\textup{arctg}}
+\newcommand{\arccotg}{\textup{arccotg}}
+\newcommand{\arcsinh}{\textup{arcsinh}}
+\newcommand{\diff}{\textup{d}}
+\newcommand{\reals}{\mathbb{R}}
+ 
+ 
+\begin{document}
+\begin{multicols}{3}
+\textbf{Goniometrické identity}
+\begin{align*}
+\sin x = -\sin(-x) \\
+\cos x = \cos(-x) \\
+\sin(x+\pi)=-\sin(x) \\
+\cos(x+\pi)=-\cos(x) \\
+\sin\left(x+\frac{\pi}{2}\right)=\cos x \\
+\cos\left(x+\frac{\pi}{2}\right)=-\sin x \\
+\sin^2x+\cos^2x=1 \\
+\sin(x+y)=\sin x\cos y + \cos x\sin y \\
+\cos(x+y)=\cos x\cos y - \sin x\sin y \\
+\sin x + \sin y = 2\sin\left(\frac{x+y}{2}\right)\cos\left(\frac{x-y}{2}\right) \\
+\sin x - \sin y = 2\cos\left(\frac{x+y}{2}\right)\sin\left(\frac{x-y}{2}\right) \\
+\cos x + \cos y = 2\cos\left(\frac{x+y}{2}\right)\cos\left(\frac{x-y}{2}\right) \\
+\cos x - \cos y = -2\sin\left(\frac{x+y}{2}\right)\sin\left(\frac{x-y}{2}\right) \\
+\sin^2x=\frac{1-\cos(2x)}{2} \\
+\cos^2x=\frac{1+\cos(2x)}{2} \\
+\frac{1}{\cos^2x} = 1 + \tan^2x\\
+\arccotg x = \arctg\left(\frac{1}{x}\right)\\
+\cosh^2(x) - \sinh^2(x) = 1\\
+\cosh(x) = \frac{e^x + e^{-x}}{2}\\
+\sinh(x) = \frac{e^x - e^{-x}}{2}\\
+\arcsinh(x) = \log(x+\sqrt{x^2+1})
+\end{align*}
+ 
+\textbf{Hodnoty gonio. funkcí}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$\alpha (deg)$ & $0$ & $30$ & $45$ & $60$ & $90$ & $180$ \\ \hline
+$\alpha (rad)$ & $0$ & $\frac{\pi}{6}$ & $\frac{\pi}{4}$ & $\frac{\pi}{3}$ & $\frac{\pi}{2}$ & $\pi$ \\ \hline
+$\sin\alpha $ & $0$ & $\frac{1}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & $1$ & $0$ \\ \hline
+$\cos$ & $1$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & $0$ & $-1$ \\ \hline
+$\tan$ & $0$ & $\frac{\sqrt{3}}{3}$ & $1$ & $\sqrt{3}$ & $N/A$ & $0$ \\ \hline
+$\cot$ & $N/A$ & $\sqrt{3}$ & $1$ & $\frac{\sqrt{3}}{3}$ & $0$ & $N/A$ \\ \hline
+\end{tabular}
+\end{center}
+ 
+\textbf{Exponenciela a logaritmus}
+\begin{align*}
+x^y=e^{y\log x} \\
+\log_yx=\frac{\log x}{\log y} \\
+\end{align*}
+ 
+\textbf{Taylorova řada}
+Pro $f(x)$ v $a$:\\ $\sum\limits_{n=0}^\infty \frac{f^{(n)}(a)}{n!}(x-a)^n$\\
+ 
+\textbf{Limity}
+\begin{align*}
+\lim\limits_{x\rightarrow\infty} \sqrt[x]{x} = 1 \\
+\lim\limits_{x\rightarrow 0} \frac{\sin x}{x} = 1 \\
+\lim\limits_{x\rightarrow 0} \frac{1 - \cos x}{x^2} = \frac{1}{2} \\
+\lim\limits_{x\rightarrow 0} \frac{e^x -1}{x} = 1 \\
+\lim\limits_{x\rightarrow 0} \frac{\log(x+1)}{x} = 1 \\
+\lim\limits_{x\rightarrow 1} \frac{\log(x)}{x-1} = 1 \\
+e^x=\lim_{x\to\infty}(1+\frac{x}{n})^n \\
+a>0, b\in \mathbb{R}: \lim\limits_{x\rightarrow \infty} x^a\log^bx = \infty \\
+a<0, b\in \mathbb{R}: \lim\limits_{x\rightarrow \infty} x^a\log^bx = 0 \\
+a>0, b\in \mathbb{R}: \lim\limits_{x\rightarrow 0} x^a\log^bx = 0 \\
+a<0, b\in \mathbb{R}: \lim\limits_{x\rightarrow 0} x^a\log^bx = \infty \\
+a>0, b\in \mathbb{R}: \lim\limits_{x\rightarrow \infty} \frac{e^{ax}}{x^b} = \infty \\
+a<0, b\in \mathbb{R}: \lim\limits_{x\rightarrow \infty} \frac{e^{ax}}{x^b} =  \\
+\end{align*}
+ 
+\textbf{Derivace}
+\begin{align*}
+(f+g)'(a)=f'(a)+g'(a)\\
+(f\cdot g)'(a)=f'(a)g(a)+f(a)g'(a) \\
+\left(\frac{f}{g}\right)'(a)=\frac{f'(a)g(a)-f(a)g'(a)}{g^2(a)} \\
+(f^{-1})'(f(a))=\frac{1}{f'(a)} \\
+(f\cdot g)^{(n)}(a)=\sum\limits_{k=0}^n \binom{n}{k}f^{(k)}(x)g^{(n-k)}(a) \\
+f'(a):=\lim\limits_{h\to 0}\frac{f(a+h)-f(a)}{h} \\
+\end{align*}
+ 
+\textbf{Tabulkové derivace}
+\begin{align*}
+(x^k)'=kx^{k-1}\\
+(e^x)'=e^x\\
+(\log|x|)'=\frac{1}{x}\\
+(a^x)'=a^x \log a\\
+(\log_a x)'=\frac{1}{x\log a}\\
+(\sin x)'= \cos x\\
+(\cos x)'= -\sin x\\
+(\text{tg } x)'= \frac{1}{\cos^2x}\\
+(\text{cotg }x)'=\frac{-1}{\sin^2x}\\
+(\arcsin x)'=\frac{1}{\sqrt{1-x^2}}\\
+(\arccos x)'=\frac{-1}{\sqrt{1-x^2}}\\
+(\text{arctg } x)'=\frac{1}{1+x^2}\\
+(\text{arccotg }x)'=\frac{-1}{1+x^2} 
+\end{align*}
+ 
+\textbf{Limity posloupnosti}
+\begin{align*}
+\frac{a_{n+1}}{a_n}<1 \Rightarrow K
+\end{align*}
+ 
+\textbf{Průběh funkce}
+\begin{enumerate}
+\item $D(f), H(f)$
+\item Limity v krajních bodech
+\item Derivace
+\item Monotonie
+\item Extrémy: $f'(x)=0$
+\item Druhá derivace
+\item Konvexita $f''(x)\ge0$, konkávnost $f''(x)\le0$
+\item Inflexní body
+\item Asymptoty $y=kx+q \Leftrightarrow 
+\lim\limits_{x \rightarrow\infty}\frac{f(x)}{x}=k,
+\lim\limits_{x \rightarrow\infty}(f(x)-kx)=q$
+\item Graf
+\end{enumerate}
+ 
+ 
+\textbf{Řady}
+ 
+Nutná podmínka: $\sum a_n < \infty \Rightarrow a_n\rightarrow0$ \\
+D'Alambert: $\forall a_n>0: \frac{a_{n+1}}{a_n}<1 \Rightarrow \\ \sum a_n < \infty$ \\
+Limitně: $\forall a_n \ge 0, b_n >0: c:=\lim\limits_{x \rightarrow\infty}\frac{a_n}{b_n}$
+\begin{enumerate}
+\item $0<c<\infty: \sum a_n < \infty \Leftrightarrow \sum b_n < \infty$
+\item $c=0: \sum b_n < \infty \Rightarrow \sum a_n < \infty$
+\item $c=\infty: \sum b_n = \infty \Rightarrow \sum a_n = \infty$
+Cauchy: $\lim\limits_{n \rightarrow\infty}\sqrt[n]{a_n}\le 1 \Rightarrow \sum a_n < \infty$
+$\lim\limits_{n \rightarrow\infty}\sqrt[n]{a_n}\ge 1 \Rightarrow \sum a_n = \infty$\\
+Leibnitz (neabsolutní): $a_n\rightarrow 0 \Rightarrow \sum (-1)^{n+1}a_n\le \infty$
+\end{enumerate}
+ 
+ 
+\textbf{Ultimátní goniometrická substituce}
+\begin{itemize}
+\item $ y=\tan\left(x/2\right) $
+\item $ dx=\frac{2dy}{1+y^2} $
+\item $ \cos x = \frac{1-y^2}{1+y^2} $
+\item $ \sin x = \frac{2y}{1+y^2} $
+\end{itemize}
+\textbf{Známe integrály}
+\begin{align*}
+\int\limits_{0}^{\pi}\sin^2x=\frac{\pi}{2}\\
+\int u\diff v = uv-\int v \diff u\\
+\int \frac{x}{1+x} = x - \log{(1+x)}\\
+\int \frac{x}{1-x} = -x - \log{(1-x)}
+\end{align*}
+\textbf{Tipy na substituci}
+\begin{itemize}
+\item $ \sqrt{1-x^2} \ldots x=\sin(t)$
+\item $ \sqrt{x^2-1} \ldots x=\cosh(t)$
+\item $ \sqrt{x^2+1} \ldots x=\sinh(t)$
+\end{itemize}
+\textbf{Aplikace}
+\begin{itemize}
+\item délka: $l(\varphi)=\int\limits_{a}^{b}\sqrt{x'(t)^2+y'(t)^2+\ldots}\diff t$
+\item plocha: $S=\int\limits_{a}^{b}(g-f)\diff x$
+\item objem: $V= \pi \int\limits_{a}^{b}f^2(x)\diff x$
+\item povrch: $S= 2\pi \int\limits_{a}^{b}f(x)\sqrt{1+f'(x)^2}\diff x$
+\end{itemize}
+\textbf{Konvergence}
+\begin{align*}
+\int\limits_{a}^{b}\frac{1}{(b-x)^p} K \Leftrightarrow p < 1 \\
+\int\limits_{a}^{b}\frac{1}{(x-a)^p} K \Leftrightarrow p < 1
+\end{align*}
+ 
+ 
+\textbf{Více proměnných}\\
+Parciální derivace jsou zaměnitelné pouze na spojitém okolí (většinou polynomy)\\
+Diferenciál v $a$: $L(h_1,...,h_n)=\frac{\partial f}{\partial x_1}(a)h_1+...+\frac{\partial f}{\partial x_n}(a)h_n$\\
+$\lim\limits_{h\to 0}\frac{f(a+h)-f(a)-L(h)}{||h||}=0$\\
+Tečná nadrovina v $a$: $x_{n+1}=f(a)+\frac{\partial f}{\partial x_1}(a)(x_1-a_1)+...+\frac{\partial f}{\partial x_n}(a)(x_n-a_n)$\\
+Směrová derivace: $D_vf(a)=\lim\limits_{t\to 0}\frac{f(a+tv)-f(a)}{t}$\\
+$\nabla f(a)=\left(\frac{\partial f}{\partial x_1}(a), ..., \frac{\partial f}{\partial x_n}(a)\right)$ \\
+$f: \reals^n\to\reals^m, g: \reals^m\to\reals^s: (g\circ f)'(a)=g'(f(a))\circ f'(a)$\\
+\textbf{Tipy na limity}
+\begin{itemize}
+\item $y = 0$
+\item $y = kx \ldots$(často $k=1$)
+\item $y = x^2$
+\item $y = \frac{1}{x}$
+\item převod na pol. souřadnice
+\end{itemize}
+ 
+\textbf{Převod na polární souřadnice}
+\begin{align*}
+\lim\limits_{(x,y) \rightarrow (a_x, a_y)} f(x,y)\\
+\Downarrow \\
+x = a_x + r \cdot \cos{\varphi}\\
+y = a_y + r \cdot \sin{\varphi}\\
+\Downarrow \\
+\lim\limits_{r \rightarrow 0} f(a_x + r \cdot \cos{\varphi}, a_y + r \cdot \sin{\varphi})
+\end{align*}
+ 
+\textbf{Per partes}
+\begin{align*}
+\int f(x)g'(x) = f(x)g(x) - \int f'(x)g(x)\\
+\int\limits_{a}^{b} f(x)g'(x) = [f(x)g(x)]_{a}^b- \int\limits_{a}^{b} f'(x)g(x)
+\end{align*}
+ 
+\textbf{Substituce}
+\begin{align*}
+\int f(\varphi(x))\varphi'(x) = \int f(x)\\
+\int\limits_{a}^{b} f(\varphi(x))\varphi'(x) = \int\limits_{\varphi(a+)}^{\varphi(b-)} f(x)\\
+\end{align*}
+ 
+\textbf{Eul. subst. 1. druhu}
+\begin{align*}
+\int R(x, \sqrt{\frac{ax+b}{cx+d}}) \rightarrow y=\sqrt{\frac{ax+b}{cx+d}}\\
+\end{align*}
+ 
+\textbf{Eul. subst. 2. druhu}
+\begin{align*}
+\int \frac{1}{x\sqrt{ax^2+bx+c}} \rightarrow t+x=\sqrt{ax^2+bx+c}
+\end{align*}
+ 
+%TODO: vyřešit formátování, tohle je hnus
+$\\\\\\\\$
+ 
+\textbf{Derivace implic. funkcí}
+\begin{itemize}
+\item vyjádřit vhodnou funkci pomocí zbylých proměnných
+\item zderivovat každou stranu zvlášť (a to podle všech zbylých proměnných)
+\item postupně vyjádřit derivace
+\item popř. zderivovat znovu (z rovnice, ne z vyjádření)
+\end{itemize}
+ 
+\textbf{Jednostranná derivace (snad)}
+\begin{align*}
+\frac{\partial f}{\partial x_i}(a) = \lim\limits_{x_i \rightarrow a_i} f(a_1, \ldots x_i, \ldots a_n)
+\end{align*}
+ 
+\textbf{Vázané extrémy}
+\begin{align*}
+Funkce f(x,y,z); mnozina M\\
+M=\{g_1(x,y,z)<1 \ldots g_n(x,y,z)<0\}\\
+\nabla f = \sum\limits_{i=1}^n \lambda_i \nabla g_i
+\end{align*}
+ 
+\textbf{Extrémy}
+\begin{enumerate}
+\item Všechny parciální derivace 1. stupně
+\item Stacionnární body (vyřešit soustavu rovnic parciálních derivacích položených nule)
+\item Všechny parciální derivace 2. stupně
+\item Pro každý stac. bod sestavit Jacobiho matici
+\item Otestovat pos. (neg.) definitnost $\rightarrow$ minimum (maximum)
+\end{enumerate}
+ 
+\end{multicols}
+ 
+\begin{flushbottom}
+ 
+\begin{center}
+Hodně štěstí!\\
+© 2013 - Pavel Kalvoda, Petr Bělohlávek\\
+MIT license\\
+\vspace{2cm}
+{\LARGE http://prints.os1.cz/13/}
+\end{center}
+\end{flushbottom}
+\end{document}
